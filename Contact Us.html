@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+
+
+    <div id="navBar">
+      <div class="nav">
+          <img src="images/logo.png" alt="" class="w-100">
+          <i class="close fa-solid open-close-icon fa-2x fa-x d-none  text-dark"></i>
+        <i class="open fa-solid open-close-icon fa-2x fa-align-justify  text-dark"></i>
+          <div>
+              <i class="fa-solid fa-globe d-block text-dark"></i>
+              <i class="fa-solid fa-share-nodes  text-dark"></i>
+          </div>
+  
+      </div>
+      <div class="links ">
+        <ul class="list-unstyled overflow-hidden py-4 px-5">
+            <li class="pb-3"> <a href="Search.html" class=" text-white text-decoration-none target="_self> Search </a> </li>
+            <li class="pb-3"> <a href="catogery.html" class=" text-white text-decoration-none target="_self> Categories </a> </li>
+            <li class="pb-3"> <a href="area.html" class=" text-white text-decoration-none target="_self> AREA </a> </li>
+            <li class="pb-3"> <a href="Ingredients.html" class=" text-white text-decoration-none target="_self> Ingredients </a> </li>
+            <li class="pb-3"> <a href="Contact Us.html" class=" text-white text-decoration-none target="_self> HOME </a> </li>
+        </ul>
+    </div>
+  
+  
+      <div class="socials text-light">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-globe"></i>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+  
+      </div>
+  </div>
+
+
+
+    <section class="d-flex justify-content-center align-items-center vh-100">
+      <div class="container w-75 text-center">
+        <div class="row py-3 g-4">
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label for="enterNameInput" class="mb-2"></label>
+              <input
+              oninput="validateProductName(this.value)  "
+              onclick="inputsValidation()"
+                type="text"
+                id="loginNameInput"
+                class="form-control"
+                placeholder="Enter your Name"
+              />
+            <div id="NameErr" class="valid rounded-2 d-none ">
+              <span>Special characters and numbers not allowed</span>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label for="enterEmaliInput" class="mb-2"></label>
+              <input
+              oninput="validateEmailName(this.value)"
+              onclick="inputsValidation()"
+                type="email"
+                id="loginEmaliInput"
+                class="form-control"
+                placeholder="Enter your emali"
+              />
+              <div id="EmailErr" class="valid rounded-2 d-none">
+                <span>Email not valid *exemple@yyy.zzz</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label for="loginPhoneInput" class="mb-2"></label>
+              <input
+              oninput="validatePhone(this.value)"
+              onclick="inputsValidation()"
+                type="number"
+                id="loginPhoneInput"
+                class="form-control"
+                placeholder="Enter your Phone"
+              />
+              <div id="PhoneErr" class="valid rounded-2 d-none">
+                <span>Enter valid Phone Number</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-2">
+              <label for="loginAgeInput" class="mb-2"></label>
+              <input
+              oninput="validateAge(this.value)"
+              onclick="inputsValidation()"
+                type="number"
+                id="loginAgeInput"
+                class="form-control"
+                placeholder="Enter your  Age"
+              />
+              <div id="AgeErr" class="valid rounded-2 d-none">
+                <span>Smallest than 10 or Greater than 90 Not valid age</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="loginPasswordInput" class=""></label>
+              <input
+              oninput="passwordValidation(this.value)"
+              onclick="inputsValidation()"
+                type="password"
+                id="loginPasswordInput"
+                class="form-control"
+                placeholder="Enter your password"
+              />
+              <div id="passwordErr" class="valid rounded-2 d-none">
+                <span>Enter valid password *Minimum eight characters, at least one letter and one number:*</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="loginRePasswordInput" class=""></label>
+              <input
+              oninput="repasswordValidation(this.value)"
+              onclick="inputsValidation()"
+                type="password"
+                id="loginRePasswordInput"
+                class="form-control"
+                placeholder="Repassword"
+              />
+              <div id="repasswordInput" class="valid rounded-2 d-none">
+                <span>Enter valid repassword</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">Submit</button>
+        <button id="submitBtn1"  class="btn btn-outline-danger d-none px-2 mt-3">Submit</button>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/Contact.js"></script>
+  </body>
+</html>
